@@ -65,6 +65,7 @@ local ALT_POWER_INFO = CopyTable(_G.ALT_POWER_BAR_PAIR_DISPLAY_INFO) or {
 	PRIEST = { [13] = CopyTable(MANA) }		-- Insanity
 }
 ALT_POWER_INFO.DRUID = ALT_POWER_INFO.DRUID or {}
+ALT_POWER_INFO.DRUID[1] = ALT_POWER_INFO.DRUID[1] or CopyTable(MANA)
 ALT_POWER_INFO.DRUID[3] = ALT_POWER_INFO.DRUID[3] or CopyTable(MANA)
 
 local function UpdateColor(self, event, unit, powerType)
